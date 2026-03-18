@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<TITLE>Templates/SampleGoodTemplate.htm</TITLE>
+</HEAD>
+<!--
+    This is a sample template that you can use
+    with your forms.
+
+    It's designed to show the results of a form
+    submission to the user in a web page.
+
+    You can write any valid HTML and we've included
+    a Print button feature to assist you.
+
+    To show a field from your form, you simply insert
+    the field name prefixed with '$'.  For example:
+        $email
+
+    This sample template has been designed for use
+    with our sample form.
+
+    To use this template, you need to:
+        1. Configure formmail.php to allow templates.
+           You can set $TEMPLATEDIR or $TEMPLATEURL
+           depending on your requirements.
+           You must have version 2.16 or later of
+           our FormMail.
+        2. Upload the template to your server
+           (to the directory you specified in $TEMPLATEDIR
+           or to a valid URL location for $TEMPLATEURL).
+        3. Configure your form to use the template:
+            <input type="hidden" name="good_template"
+                value="nameoftemplate.htm" />
+
+    For more information and updates, visit
+    www.tectite.com.
+
+    We provide free software and free support!  But we
+    need your help to continue; please place a link
+    on your website to our website. Here's some HTML
+    you can use:
+        Visit www.tectite.com for free
+        <a href="http://www.tectite.com/">FormMail</a>.
+-->
+
+<SCRIPT LANGUAGE="Javascript" TYPE="text/javascript"><!--
+/*
+This script is written by Eric (Webcrawl@usa.net)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+function printit(){  
+if (window.print) {
+    window.print() ;  
+} else {
+    var WebBrowser = '<OBJECT ID="WebBrowser1" WIDTH=0 HEIGHT=0 CLASSID="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"></OBJECT>';
+document.body.insertAdjacentHTML('beforeEnd', WebBrowser);
+    WebBrowser1.ExecWB(6, 2);//Use a 1 vs. a 2 for a prompting dialog box    WebBrowser1.outerHTML = "";  
+}
+}
+// -->
+</SCRIPT>
+<BODY>
+<H1>Success!<BR>Thanks for submitting your information to us.</H1>
+  <SCRIPT LANGUAGE="Javascript" TYPE="text/javascript"><!--
+/*var NS = (navigator.appName == "Netscape");*/
+var VERSION = parseInt(navigator.appVersion);
+//if (VERSION > 3) {
+//    document.write('<input type=button value="Click to print" name="Print" onClick="printit()">');
+//}
+// -->
+  </SCRIPT>
+</P>
+</BODY>
+</HTML>

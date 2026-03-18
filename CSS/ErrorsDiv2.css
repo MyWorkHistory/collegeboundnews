@@ -1,0 +1,48 @@
+.WireFrameMenu{
+	background-color: #FFCC66;
+	width: 190px;
+	position: absolute;
+	border: thick none #000000;
+}
+
+.ListTbl {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.ListTbl tr {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.ListTbl td {
+	border: thin solid #000000;
+}
+
+#errorsDiv {
+	position:absolute;
+	left:20px;
+	height: 80px;
+	width: 172px;
+	color: red;
+	top: 302px;
+}
+
+#errorsDiv h3 {
+	color: #3300FF;
+}
+
+#errorsDiv h4 {
+	color: #3300FF;
+}
+
+.BlueHeaderText {
+	color: #0000FF;
+	font-weight: bold;
+	font-size: medium;
+}
+.SmallText {
+	font-size: small;
+}

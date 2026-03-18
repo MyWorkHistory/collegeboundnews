@@ -1,0 +1,7 @@
+2001.08.26 12:25 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\2000-2001.gif <-- collegeboundnewsTest /resources/00issues 2000-2001.gif
+2001.08.26 12:25 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\2000issues.gif <-- collegeboundnewsTest /resources/00issues 2000issues.gif
+2001.08.26 12:25 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\subscribe.gif <-- collegeboundnewsTest /resources/00issues subscribe.gif
+2001.08.26 13:59 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\2000-2001.gif --> 216.117.129.25 /usr/local/etc/httpd/htdocs/resources/00issues 2000-2001.gif
+2001.08.26 13:59 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\2000issues.gif --> 216.117.129.25 /usr/local/etc/httpd/htdocs/resources/00issues 2000issues.gif
+2001.08.26 13:59 B C:\charles\internet\website\collegeboundnews.com\resources\00issues\subscribe.gif --> 216.117.129.25 /usr/local/etc/httpd/htdocs/resources/00issues subscribe.gif
+2001.08.28 08:12 B D:\Charles\Internet\collegeboundnews\resources\00issues\WS_FTP.LOG <-- collegeboundnews.com /usr/local/etc/httpd/htdocs/resources/00issues WS_FTP.LOG

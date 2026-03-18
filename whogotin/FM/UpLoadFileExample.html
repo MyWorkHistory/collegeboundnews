@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE>Sample form for use with formmail.php</TITLE>
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript">
+var nReload = 5;
+
+function NewVerifyImage() {
+    if (nReload <= 2)
+        if (nReload <= 0) {
+            alert("Sorry, too many reloads.");
+            return;
+        		}
+        else
+            alert("Only " + nReload + " more reloads are allowed");
+    nReload--;
+
+        //
+        // This code now works in both IE and FireFox
+        //
+    var e_img;
+
+    e_img = document.getElementById("vimg");
+    if (e_img)
+                //
+                // FireFox attempts to "optimize" by not reloading
+                // the image if the URL value doesn't actually change.
+                // So, we make it change by adding a different
+                // count parameter for each reload.
+                //
+        e_img.setAttribute("src",e_img.src+'?count='+nReload);
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY>
+
+
+<!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+<FORM METHOD="post" ACTION="FM2.php" NAME="SampleForm" ENCTYPE="multipart/form-data">
+   <INPUT TYPE="hidden" NAME="env_report" VALUE="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER">
+
+    <!-- STEP 2: Put your email address in the 'recipients' value. Note that you also have to allow this email 
+				address in the $TARGET_EMAIL setting within formmail.php!-->
+    <INPUT TYPE="hidden" NAME="recipients" VALUE="WyleySam@comcast.net" />
+
+    <!-- STEP 3: Specify required fields in the 'required' value -->
+    <INPUT TYPE="hidden" NAME="required" VALUE="email:Your email address,realname:Your name" />	
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <INPUT TYPE="hidden" NAME="subject" VALUE="E-Mail UpLoadFile Project" />
+
+    <!-- Set up Bad Error handler & a template for it. -->
+		<INPUT TYPE="hidden" NAME="good_template" VALUE="UL_GoodTemplate.htm" />
+		<INPUT TYPE="hidden" NAME="bad_template" VALUE="UL_ErrorTemplate.htm" />		
+    <INPUT TYPE="hidden" NAME="bad_url" VALUE="fmbadhandler.php" />	
+    <INPUT TYPE="hidden" NAME="this_form" VALUE="http://localhost/Work/PHP/FormMail/UpLoadFileExample/UpLoadFileExample.html" />
+  
+<!-- 	      
+		<INPUT TYPE="hidden" NAME="mail_options" VALUE="TemplateMissing=n/a,HTMLTemplate=SampleGoodTemplate2.htm" />
+    <INPUT TYPE="hidden" NAME="autorespond" VALUE="HTMLTemplate=AutoResponseTemplate.htm,Subject=Your confirmation,TemplateMissing=*N/A*" />
+    <!--<input type="hidden" name="alert_to" value="nms1944@yahoo.com" />-->
+ 
+  </P>
+  <TABLE BORDER="1" CELLSPACING="5%">
+    <TR>
+      <TD><P>Please enter your name:</P></TD>
+      <TD><INPUT NAME="realname" TYPE="text" SIZE="50" MAXLENGTH="50" />      </TD>
+    </TR>
+    <TR>
+      <TD><P>Please enter your email address:</P></TD>
+      <TD><INPUT NAME="email" TYPE="text" SIZE="50" MAXLENGTH="50" />      </TD>
+    </TR>
+  </TABLE>   
+  <P>
+	  <INPUT NAME="btnSubmit" TYPE="submit" VALUE="Press Me">
+	</P>
+</FORM>
+<!--
+    Please support the ongoing development of FormMail and our other
+    freeware products by keeping the following text on your form
+    (or placing it elsewhere on your website).  Thanks!
+-->
+</BODY>
+</HTML>

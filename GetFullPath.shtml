@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Getting the full path</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+  function GetFullPath() {
+    var FPath = "<!--#echo var="SCRIPT_FILENAME"-->";
+    FPath = FPath.match(/(^.*\/).*$/);
+    document.TestForm.FullPathDir.value = FPath[1];
+		document.TestForm.HtaccessLine.value = 'AuthUserFile "'+FPath[1]+'"';
+  }
+</script>
+
+</head>
+
+<body onload="GetFullPath()">
+<form action="" method="post" name="TestForm" id="TestForm">
+<p>
+The full path to this file:<br>
+<input type="text" size="100" value="<!--#echo var="SCRIPT_FILENAME"-->">
+</p>
+<p>
+The full path to this directory on the server:<br>
+<input name="FullPathDir" type="text" id="FullPathDir" size="100">
+</p>
+<hr>
+<p> You need to specify the following line in your .htaccess:<br>
+    <input name="HtaccessLine" type="text" id="HtaccessLine" size="100">
+</p>
+</form>
+</body>
+</html>

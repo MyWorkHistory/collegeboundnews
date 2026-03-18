@@ -1,0 +1,1 @@
+2011-06-01 08:21:54:593 - TTrigger.LagTimerNotify: Err = Access violation at address 01D30AA1 in module 'aimemb.dll'. Read of address 00000000

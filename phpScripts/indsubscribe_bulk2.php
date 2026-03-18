@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>College Bound News Subscription Form</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<!--<FORM ACTION="../phpScripts/cbnews_indsubscribe.php" METHOD="POST" ENCTYPE="x-www-form-urlencoded">-->
+<FORM ACTION="../phpScripts/cbnews_indsubscribe.php" METHOD="POST">
+<P>
+<!--<INPUT TYPE="hidden" NAME="recipient" VALUE="s.sautter@sbcglobal.net">-->
+<INPUT TYPE="hidden" NAME="recipient" VALUE="s.sautter@sbcglobal.net">
+<INPUT TYPE="hidden" NAME="subject" VALUE="STUDENT, PARENT AND INDIVIDUAL SUBSCRIPTION ">
+<INPUT TYPE="hidden" NAME="thankurl" VALUE="http://www.collegeboundnews.com/contactusthankyou.htm"></P>
+
+<BLOCKQUOTE>
+  <P><B><FONT FACE="Times New Roman"><HR ALIGN=LEFT SIZE="1" NOSHADE></FONT><FONT
+   COLOR="#3366cc" SIZE="+2" FACE="Arial">SUBSCRIPTION FORM FOR
+  </FONT><FONT COLOR="#3366cc" SIZE="+1" FACE="Arial">STUDENTS,
+  PARENTS, AND INDIVIDUALS</FONT></B></P>
+  <P><B><FONT COLOR="#000000" SIZE="+1" FACE="Arial">Print out
+  and mail this Subscription Form along with your check to CB's
+  address below. <BR>
+  Or fill out this form and click the submit button to send it
+  to us and we will bill you. <BR>
+  </FONT><FONT FACE="Times New Roman"><HR ALIGN=LEFT SIZE="1"
+  NOSHADE><BR>
+  </FONT></B><FONT FACE="Times New Roman"><INPUT TYPE="radio"
+  NAME="subscription_type" VALUE="Bulk Orders: 2 Individual subcription for one year at $49 each"
+  CHECKED="1"> <B>YES - Bulk order</B>. I want to receive a monthly, printed
+  copy of <B>2 COLLEGE BOUND</B> via first class mail, <B>and</B>
+  password to access  <B>collegeboundnews.com </B>for
+  my personal, non-institutional use only, for <B>one year</B>
+  at the  individual subscriber rate of <B>$49 each</B> .</FONT></P>
+  
+  <P><FONT FACE="Times New Roman">Please mail my monthly, printed
+  copies of <B>COLLEGE BOUND</B> and <B>password</B> to <B>collegeboundnews.com
+  </B>to me at this address:</FONT></P>
+  <P><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="2">
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">Last
+        name :</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="lastname" SIZE="50" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26"><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">First
+        name:</FONT></TD>
+      <TD HEIGHT="26"><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="firstname" SIZE="50" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="26"><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">School
+        name:</FONT></TD>
+      <TD HEIGHT="26"><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="school_name" SIZE="50" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="56"><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">Street
+        Address:</FONT></TD>
+      <TD HEIGHT="56"><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        NAME="street" SIZE="50" TYPE="text"> <BR>
+        <INPUT MAXLENGTH="80" NAME="street2" SIZE="50" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD HEIGHT="39"><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">City,
+        State/Province &amp; Zip:</FONT></TD>
+      <TD HEIGHT="39"><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="city" TYPE="text" SIZE="20"> <INPUT MAXLENGTH="20"
+        NAME="state" SIZE="5" TYPE="text"> <INPUT MAXLENGTH="20" NAME="zip"
+        SIZE="15" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">Phone
+        number:</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="phone" SIZE="50" TYPE="text"> </FONT><FONT
+         COLOR="#800000" SIZE="-2">(ex.:773-262-5810)</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif">Fax number:</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="fax" SIZE="50" TYPE="text"> </FONT><FONT
+         COLOR="#800000" SIZE="-2">(ex.:773-262-5810)</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">E-mail:</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        MAXLENGTH="80" NAME="email" SIZE="50" TYPE="text"></FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">I
+        am a :</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        TYPE="radio" NAME="subscriber_type" VALUE="Student" CHECKED="1">
+        Student <BR>
+        <INPUT TYPE="radio" NAME="subscriber_type" VALUE="Parent"> Parent
+<BR>
+        <INPUT TYPE="radio" NAME="subscriber_type" VALUE="Other"> Other
+        (specify): &nbsp;<INPUT TYPE="text" SIZE="40" NAME="other_specified"></FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">&nbsp;</FONT></TD>
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        TYPE="submit" NAME="Submit" VALUE="Submit"></FONT></TD>
+    </TR>
+  </TABLE></P>
+  <P><FONT FACE="Times New Roman">As an individual subscriber,
+  I pledge not to share the <B>collegeboundnews.com </B>access
+  code with anyone outside my immediate family. I understand that
+  to share the code is a copyright violation subject to stiff penalties.</FONT></P>
+  <P><FONT FACE="Times New Roman">(</FONT><FONT SIZE="-1" FACE="Times New Roman">signature)_______________________________________________________________________________</FONT></P>
+  <P><B><FONT SIZE="+1" FACE="Arial">Print out and mail this Subscription
+  Form along with your check for the amount due to:</FONT></B></P>
+  <P><CENTER><B><FONT FACE="Times New Roman">COLLEGE BOUND<BR>
+  P.O. Box 6526<BR>
+  Evanston, Illinois 60204</FONT></B></CENTER></P>
+  <P><FONT FACE="Times New Roman">As soon as we receive your payment,
+  we will immediately send your <B>collegeboundnews.com</B> access
+  code and begin sending printed newsletters to the above address.</FONT></P></BLOCKQUOTE>
+
+<P><CENTER><A HREF="../aboutus/aboutus.html"><FONT SIZE="-1" FACE="Arial">About
+Us</FONT></A><FONT SIZE="-1" FACE="Arial"> | <A HREF="../subscribe.html">Subscribe</A>
+| <A HREF="../contactus/contact.html">Contact Us</A> | <A HREF="../articles.php">2003-2004
+Issues</A> | <A HREF="../visitors/index.html">Visitors</A></FONT><BR>
+<FONT SIZE="-1" FACE="Arial"><A HREF="../backissues/index.html">Back
+Issues</A> | <A HREF="../whogotin/index.html">Who Got In?</A></FONT>
+| <FONT SIZE="-1" FACE="Arial"><A HREF="../links/links.html">Links
+</A>| <A HREF="../cbhome.html">Home</A></FONT></CENTER></P>
+
+<BLOCKQUOTE>
+  <P><CENTER><A HREF="../privacypolicy.html"><FONT SIZE="-1" FACE="Arial">Privacy
+  Policy/Terms of Service</FONT></A><FONT SIZE="-1" FACE="Arial"><BR>
+          <SCRIPT>
+						<!--
+							var year = new Date();
+							year = year.getYear();
+							if (year<1900) 
+								year+=1900						
+		
+							cpy = "&copy; " + year + " COLLEGE BOUND Publications Inc.";
+							document.write(cpy);
+						//-->
+						</SCRIPT> 
+
+          <br />All Rights Reserved.<br />
+  <A HREF="mailto:s.sautter@sbcglobal.net">s.sautter@sbcglobal.net</A></FONT>
+  </CENTER>
+</BLOCKQUOTE>
+</FORM>
+
+</BODY>
+</HTML>

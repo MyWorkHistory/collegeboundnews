@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
+require valid-user
+AuthName "Site Admin - modify sections on the home page, etc"

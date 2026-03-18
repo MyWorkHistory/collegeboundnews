@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.ListTbl {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.ListTbl tr {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.ListTbl td {
+	border: thin solid #000000;
+}
+
+#errorsDiv {
+	position:absolute;
+	left:1px;
+	height: 80px;
+	width: 172px;
+	color: red;
+	top: 247px;
+}
+
+#errorsDiv h3 {
+	color: #3300FF;
+}
+
+#errorsDiv h4 {
+	color: #3300FF;
+}
+
+
+.wireframemenu{
+	border: 1px solid #C0C0C0;
+	background-color: #0000FF;
+	border-bottom-width: 0px;
+	width: 190px;
+	position: absolute;
+}
+
+* html .wireframemenu{ /*IE only rule. Original menu width minus all left/right paddings */
+width: 164px;
+}
+
+.wireframemenu ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.wireframemenu a{
+	padding: 4px 3px;
+	display: block;
+	width: 100%; /*Define width for IE6's sake*/
+	color: #ffcc66;
+	text-decoration: none;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.wireframemenu a:visited{
+	color: ##0000FF;
+}
+
+html>body .wireframemenu a{ /*Non IE rule*/
+width: auto;
+}
+
+.wireframemenu a:hover{
+background-color: #F8FBBD;
+color: black;
+}
+
+.BlueHeaderText {
+	color: #0000FF;
+	font-weight: bold;
+	font-size: medium;
+}
+.SmallText {
+	font-size: small;
+}

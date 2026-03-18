@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile "/home/collegeb/.htpasswds/public_html/members/passwd"
+require valid-user
+AuthName "Protected public_html/members"

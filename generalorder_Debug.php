@@ -1,0 +1,64 @@
+<HTML>  
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>General Order</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+ <?php
+    $xxx="123";
+ ?>
+<!--<FORM ACTION="phpScripts/cbnews_payment_method.php" METHOD="POST" ENCTYPE="x-www-form-urlencoded">-->
+<FORM ACTION="phpScripts/cbnews_payment_method.php" METHOD="post">
+
+<P><INPUT TYPE="hidden" NAME="subject" VALUE="Payment Method">
+<INPUT TYPE="hidden" NAME="thankurl" VALUE="http://www.collegeboundnews.com/contactusthankyou.htm"></P>
+
+<BLOCKQUOTE>
+  <P>&nbsp;</P>
+  <P><B><FONT SIZE="+2" FACE="Times New Roman">Please Select Your
+  Payment Method:</FONT></B></P>
+  <P><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="2">
+    <TR>
+      <TD>
+        <P><FONT FACE="Times New Roman">
+					<INPUT TYPE="radio" ID="payment_method" NAME="payment_method" VALUE="Pay by Credit Card" CHECKED="1"> &nbsp;&nbsp;I will Pay by Credit Card &nbsp;&nbsp;&nbsp;&nbsp;
+					<IMG SRC="images/icon_visa.gif" BORDER="0" ALT="Visa" WIDTH="39" HEIGHT="26" NATURALSIZEFLAG="3"
+									ALIGN="BOTTOM"><IMG SRC="images/icon_mastercard.gif" BORDER="0"
+									ALT="MasterCard" HSPACE="2" WIDTH="39" HEIGHT="26" NATURALSIZEFLAG="3"
+									ALIGN="BOTTOM"><IMG SRC="images/icon_discover.gif" BORDER="0"
+									ALT="Discover" WIDTH="39" HEIGHT="26" NATURALSIZEFLAG="3" ALIGN="BOTTOM"><IMG 
+									SRC="images/icon_amex.gif" BORDER="0" ALT="American Express"
+									hspace="2" WIDTH="27" HEIGHT="26" NATURALSIZEFLAG="3" ALIGN="BOTTOM">
+				</FONT></P>
+
+        <P><FONT FACE="Times New Roman">
+					<INPUT TYPE="radio" ID="payment_method" NAME="payment_method" VALUE="Pay by Check"> I will Pay by Check or Purchase Order
+				</FONT></P>
+			</TD>
+      <TD WIDTH="50%">&nbsp;</TD> 
+    </TR>
+    <TR>
+      <TD><FONT COLOR="#990000" SIZE="-1" FACE="arial, helvetica, sans-serif">&nbsp;</FONT></TD> 
+      <TD><FONT SIZE="-1" FACE="arial, helvetica, sans-serif"><INPUT
+        TYPE="submit" NAME="Submit" VALUE="GO"></FONT></TD> 
+    </TR>
+  </TABLE></P><HR ALIGN=LEFT>
+  <P><CENTER><A HREF="../aboutus/aboutus.html"><FONT SIZE="-1"
+   FACE="Arial">About Us</FONT></A><FONT SIZE="-1" FACE="Arial">
+  | <A HREF="../subscribe/subscribe.html">Subscribe</A> | <A HREF="../contactus/contact.html">Contact
+  Us</A> | <A HREF="../articles.html">Current Issues</A> | <A 
+  HREF="../visitors/index.html">Visitors</A></FONT><BR>
+  <FONT SIZE="-1" FACE="Arial"><A HREF="../backissues/index.html">Back
+  Issues</A> | <A HREF="index.html">Who Got In?</A></FONT> | <FONT
+   SIZE="-1" FACE="Arial"><A HREF="../links/links.html">Links </A>|
+  <A HREF="../cbhome.html">Home</A></FONT></CENTER></P>
+  <P><CENTER><A HREF="../privacypolicy.html"><FONT SIZE="-1" FACE="Arial">Privacy
+  Policy/Terms of Service</FONT></A><FONT SIZE="-1" FACE="Arial"><BR>
+  &copy;2001-2008 COLLEGE BOUND Publications Inc.<BR>
+  All Rights Reserved.<BR>
+  <A HREF="mailto:s.sautter@sbcglobal.net">s.sautter@sbcglobal.net</A></FONT></CENTER>
+</BLOCKQUOTE>
+</FORM>
+
+</BODY>
+</HTML>
