@@ -1,5 +1,10 @@
 <?php require_once('../../CollegeBoundNews.php'); ?>
 <?php
+/**
+ * Modify Current Issues (full page): left intro (CurrentIssues), main center block (CurrentIssuesPage), and PDF upload.
+ * Writes to SiteText; members/articles_automatic.php reads and displays. When ready, articles.php can be
+ * switched to read from the same DB (or redirect to articles_automatic.php) after the client's content is in the DB.
+ */
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
@@ -350,10 +355,10 @@ window.attachEvent("onload", getmenuoffsetY)
 
       <table>
         <tr valign="baseline">
-          <td nowrap="nowrap" class="SmallText" colspan="2">Update the left intro text, the full center page content, and optionally upload the monthly PDF.</td>
+          <td nowrap="nowrap" class="SmallText" colspan="2">This form controls the entire Current Issues page: left intro, main center content (issue list and PDF links), and optional PDF upload. Preview at <em>members/articles_automatic.php</em> until <em>articles.php</em> is switched to use this content.</td>
         </tr>
         <tr valign="baseline">
-          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>Left Intro (existing CurrentIssues key):</strong></td>
+          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>Left Intro (CurrentIssues):</strong></td>
         </tr>
         <tr valign="baseline">
           <td width="589"><textarea name="Verbiage" id="Verbiage" cols="75" rows="8"><?php echo htmlentities($currentIssuesIntroText, ENT_COMPAT, 'utf-8'); ?></textarea>
@@ -363,17 +368,17 @@ window.attachEvent("onload", getmenuoffsetY)
             <input onclick="CxlButton()" name="Cancel" type="button"  value="Cancel"/>          </td>
         </tr>
         <tr valign="baseline">
-          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>Main Current Issues Block (new CurrentIssuesPage key):</strong></td>
+          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>Main Current Issues Block (CurrentIssuesPage):</strong> Full center content—headings, issue descriptions, and links to PDFs (e.g. <em>25-26issues/Mar26.pdf</em>). Type or paste this in the editor and click Update.</td>
         </tr>
         <tr valign="baseline">
           <td width="589"><textarea name="PageVerbiage" id="PageVerbiage" cols="75" rows="20"><?php echo htmlentities($currentIssuesPageText, ENT_COMPAT, 'utf-8'); ?></textarea>
           </td>
           <td valign="top">
-            <span class="SmallText">WYSIWYG HTML block shown in<br />`members/articles_automatic.php`.</span>
+            <span class="SmallText">Shown on Current Issues page.</span>
           </td>
         </tr>
         <tr valign="baseline">
-          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>Optional PDF Upload:</strong> choose file and folder under <em>members/</em> (example: <em>25-26issues</em>).</td>
+          <td nowrap="nowrap" class="SmallText" colspan="2"><strong>PDF Upload:</strong> Upload the monthly issue PDF; it will be saved under <em>members/</em>. Use the folder and filename below (e.g. <em>25-26issues</em>, <em>Mar26.pdf</em>). After upload, add a link in the Main Block above to the new file (e.g. <em>25-26issues/Mar26.pdf</em>).</td>
         </tr>
         <tr valign="baseline">
           <td width="589">

@@ -1,5 +1,14 @@
 <?php require_once "../../CollegeBoundNews.php"; ?>
 <?php
+/**
+ * Current Issues page driven by database (SiteText keys: CurrentIssues, CurrentIssuesPage).
+ * Content is edited in Admin/ModCurrrentIssues.php (left intro + main block + optional PDF upload).
+ *
+ * SWITCHOVER: Do not modify members/articles.php until after the manual monthly update is done.
+ * Then: (1) Put the updated page HTML into the control panel "Main Current Issues Block" and save.
+ * (2) Change articles.php to use the DB—either redirect here (header Location: articles_automatic.php)
+ *     or replace its center section with the same SELECT/echo logic as below so the URL stays articles.php.
+ */
 if (!function_exists("GetSQLValueString")) {
     function GetSQLValueString(
         $theValue,
@@ -174,7 +183,7 @@ if ($totalRows_Recordset1 > 0) {
                      <a href="articles.php">Current Issues</a> |
                      <a href="../backissues/index.html">Back Issues</a> |
                      <a href="../visitors/index.html">Visitors</a> |
-                     <a href="../links/links.html">Links/Resources</a>
+                     <a href="../links/links.php">Links/Resources</a>
                      </font>
                   </p>
                   <a href="../privacypolicy.html"><font size="-1" face="Arial">Privacy Policy/Terms of Service</font></a>
