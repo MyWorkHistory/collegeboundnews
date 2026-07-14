@@ -1,4 +1,4 @@
-<?php require_once('../../CollegeBoundNews.php'); ?>
+<?php require_once('../CollegeBoundNews.php'); ?>
 
 <?php
 

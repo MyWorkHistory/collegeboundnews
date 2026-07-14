@@ -1,4 +1,4 @@
-<?php require_once('../../CollegeBoundNews.php'); ?>
+<?php require_once('../CollegeBoundNews.php'); ?>
 <?php
 /**
  * Modify Current Issues (full page): left intro (CurrentIssues), main center block (CurrentIssuesPage), and PDF upload.

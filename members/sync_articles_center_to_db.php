@@ -6,7 +6,7 @@
  * Run once from browser: https://www.collegeboundnews.com/members/sync_articles_center_to_db.php
  * Or delete this file after use for security.
  */
-require_once __DIR__ . '/../../CollegeBoundNews.php';
+require_once __DIR__ . '/../CollegeBoundNews.php';
 
 if (!function_exists('GetSQLValueString')) {
     function GetSQLValueString($theValue, $theType, $theDefinedValue = '', $theNotDefinedValue = '') {

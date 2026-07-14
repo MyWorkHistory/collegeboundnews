@@ -1,5 +1,5 @@
 <?php
-require_once('../../CollegeBoundNews.php');
+require_once('../CollegeBoundNews.php');
 ?><?php
 if (!function_exists("GetSQLValueString")) {
     function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")

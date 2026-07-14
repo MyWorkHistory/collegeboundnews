@@ -1,4 +1,4 @@
-<?php require_once('../../CollegeBoundNews.php'); ?>
+<?php require_once('../CollegeBoundNews.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -248,7 +248,7 @@ body {
 
      	<P><a href="Dec10.html"><b><font size="+1" face="Verdana">December 2010</font></b></a><br />
         <b><font size="-1" face="Verdana">Early App Talk Continues;</font></b><font size="-1" face="Verdana"> Financial Worries in the States; <b>Scholarship Scoops</b>; 
-        The Counselor’s Corner; <b>Stealth Applications; </b>The Counselor's Bookshelf;<strong> The Bookshelf; </strong></font>Curriculum Capsules; <strong>Legacies</strong> </P>
+        The Counselorï¿½s Corner; <b>Stealth Applications; </b>The Counselor's Bookshelf;<strong> The Bookshelf; </strong></font>Curriculum Capsules; <strong>Legacies</strong> </P>
 
 
      	<P><a href="Nov10.html"><b><font size="+1" face="Verdana">November 2010</font></b></a><br />
