@@ -1,0 +1,112 @@
+<html>
+   <head>
+      <meta content="Adobe PageMill 3.0 Mac" name="GENERATOR">
+      <title>General Order</title>
+      <link rel="stylesheet" type="text/css" href="../CSS/csshorizontalmenu.css" />
+      <script language="javascript" type="text/javascript" src="../Scripts/csshorizontalmenu.js"></script>
+      <link href="../CSS/GradientShadow.css" rel="stylesheet" type="text/css" />
+      <script language="javascript" type="text/javascript" src="../Scripts/GradientShadow.js"></script>
+      <script language="javascript" type="text/javascript">
+         gradientshadow.depth=6;
+      </script>
+      <style type="text/css">
+         .tblMain {
+         background-color: #FFCC66;
+         }
+         body {
+         background-color: #FFE3AB;
+         background-image: url(../images/Background2.jpg);
+         }
+         .TahomaFont {
+         font-family: Tahoma
+         }
+         -->
+      </style>
+   </head>
+   <body>
+      <!--<FORM ACTION="phpScripts/cbnews_payment_method.php" METHOD="POST" ENCTYPE="x-www-form-urlencoded">-->
+      <!-- <FORM ACTION="../phpScripts/cbnews_payment_method.php" METHOD="post"> -->
+      <form action="cbnews_payment_method.php" method="post">
+         <p><input name="subject" type="hidden" value="Payment Method">
+            <input name="thankurl" type="hidden" value="http://www.collegeboundnews.com/contactusthankyou.htm">
+         </p>
+         <blockquote>
+            <p>&nbsp;</p>
+            <p align="center"><b><font face="Times New Roman" size="+2">Choose Individual or Institutional 
+               Membership</font></b>
+            </p>
+            <p align="center">
+            <table width="1000" border="5" cellpadding="5" cellspacing="5" class="tblMain">
+               <tr>
+                  <td height="200">
+                     <p>
+                        <font face="Times New Roman">
+                           <!-- old: <INPUT TYPE="radio" ID="payment_method" NAME="payment_method" VALUE="Pay by Credit Card" CHECKED="1"> &nbsp;&nbsp;Institutional &nbsp;&nbsp;&nbsp;&nbsp; -->
+                           <input id="subscription_type" checked="1" name="subscription_type" type="radio" value="Individual">Individual
+                           <br />
+                           <i>This type of subscription cannot be shared throughout an institution. It is appropriate 
+                           for parents, students, and individual administrators.</i> <br />
+                           $59 for 1 year, or $100 for 2 years.
+                        </font>
+                     </p>
+                     <p>
+                        <font face="Times New Roman">
+                           <!-- old: <INPUT TYPE="radio" ID="payment_method" NAME="payment_method" VALUE="Pay by Check"> -->
+                           <input id="subscription_type" name="subscription_type" type="radio" value="Institutional"> 
+                           Institutional
+                        </font>
+                        <br />
+                        <i>This type of membership can be shared throughout an institution. It is appropriate for officials of the institution such as admissions advisors/officers and can be shared with anyone associated with the institution, including all teachers, parents, students, and so on.</i>.<br />
+                        $100&nbsp; for 1 year, or $150 for 2 years
+                     </p>
+                  </td>
+               </tr>
+               <tr height="50">
+                  <td align="center">
+                     <font face="arial, helvetica, sans-serif" size="-1">
+                     <input name="Submit" type="submit" value="GO"></font> 
+                  </td>
+               </tr>
+            </table>
+            </p>
+            <hr align="LEFT">
+            <p></p>
+            <center>
+               <a href="../aboutus/aboutus.html"><font face="Arial" size="-1">About 
+               Us</font></a><font face="Arial" size="-1"> |
+               <a href="../subscribe/subscribe.html">Subscribe</a> |
+               <a href="../contactus/contact.html">Contact Us</a> |
+               <a href="../articles.php">Current Issues</a> |
+               <a href="../visitors/index.html">Visitors</a></font><br>
+               <font face="Arial" size="-1">
+                  <a href="../backissues/index.html">Back Issues</a> 
+                  | <!-- <a href="index.html">Who Got In?</a> --> 
+               </font>
+               |
+               <font face="Arial" size="-1"><a href="../links/links.html">Links </a>|
+               <a href="../cbhome.html">Home</a></font> 
+            </center>
+            <p></p>
+            <p></p>
+            <center>
+               <a href="../privacypolicy.html"><font face="Arial" size="-1">Privacy 
+               Policy/Terms of Service</font></a> <br>
+               <script>
+                  <!--
+                  	var year = new Date();
+                  	year = year.getYear();
+                  	if (year<1900) 
+                  		year+=1900						
+                  
+                  	cpy = "&copy; " + year + " COLLEGE BOUND Publications Inc.";
+                  	document.write(cpy);
+                  //-->
+               </script>
+               <br />
+               All Rights Reserved.<br />
+               <a href="mailto:collegeboundnews@gmail.com">collegeboundnews@gmail.com</a>
+            </center>
+         </blockquote>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,5 @@
+[2026-07-14 02:16:18][INFO] Perform task echo
+[2026-07-14 02:16:18][INFO] Perform task get_php_version
+[2026-07-14 02:16:19][INFO] Perform task is_windows
+[2026-07-14 02:16:20][INFO] Perform task get_base_path
+[2026-07-14 02:16:20][INFO] Perform task get_dir_tree
