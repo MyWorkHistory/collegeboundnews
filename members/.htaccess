@@ -1,4 +1,16 @@
-AuthType Basic
-AuthUserFile "/home/collegeb/.htpasswds/public_html/members/passwd"
-require valid-user
-AuthName "Protected public_html/members"
+# Password protection was configured on the OLD host:
+#   AuthUserFile "/home/collegeb/.htpasswds/public_html/members/passwd"
+# That absolute path does not exist on the new server, so Apache returns
+# Internal Server Error (500) for every request under /members/ — including
+# articles.php and static files like Sept26.html.
+#
+# Re-enable protection in the hosting control panel (Plesk/cPanel →
+# Password Protection / Directory Access) for the "members" folder.
+# That will write a new AuthUserFile with the correct absolute path.
+#
+# Do NOT restore the old /home/collegeb/... path.
+
+# AuthType Basic
+# AuthUserFile "/home/collegeb/.htpasswds/public_html/members/passwd"
+# require valid-user
+# AuthName "Protected public_html/members"

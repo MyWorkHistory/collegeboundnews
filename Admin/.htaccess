@@ -1,4 +1,10 @@
-AuthType Basic
-AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
-require valid-user
-AuthName "Site Admin - modify sections on the home page, etc"
+# Password protection was configured on the OLD host:
+#   AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
+# That path does not exist on the new server and causes HTTP 500 for /Admin/.
+#
+# Re-enable via hosting control panel Password Protection for the Admin folder.
+
+# AuthType Basic
+# AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
+# require valid-user
+# AuthName "Site Admin - modify sections on the home page, etc"

@@ -1,4 +1,7 @@
-AuthType Basic
-AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
-require valid-user
-AuthName "Site Admin - modify sections on the home page, etc"
+# Same old-host AuthUserFile issue as Admin/.htaccess — disabled to prevent HTTP 500.
+# Re-enable via hosting control panel Password Protection if this folder is still used.
+
+# AuthType Basic
+# AuthUserFile "/home/collegeb/.htpasswds/public_html/admin/passwd"
+# require valid-user
+# AuthName "Site Admin - modify sections on the home page, etc"
