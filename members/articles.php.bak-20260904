@@ -1,11 +1,13 @@
 <?php require_once '../CollegeBoundNews.php'; ?>
 <?php
 /**
- * Current Issues page.
- * Left column: SiteText CurrentIssues (DB).
- * Center: hard-coded 2026-2027 listing (Volume 41). Monthly HTML issues live in 26-27issues/.
- * Admin CurrentIssuesPage is unused for the center block during this HTML-year workflow;
- * add new months at the TOP of the center listing (or resume DB later if desired).
+ * Current Issues page driven by database (SiteText keys: CurrentIssues, CurrentIssuesPage).
+ * Content is edited in Admin/ModCurrrentIssues.php (left intro + main block + optional PDF upload).
+ *
+ * SWITCHOVER: Do not modify members/articles.php until after the manual monthly update is done.
+ * Then: (1) Put the updated page HTML into the control panel "Main Current Issues Block" and save.
+ * (2) Change articles.php to use the DB—either redirect here (header Location: articles_automatic.php)
+ *     or replace its center section with the same SELECT/echo logic as below so the URL stays articles.php.
  */
 if (!function_exists("GetSQLValueString")) {
     function GetSQLValueString(
@@ -41,9 +43,10 @@ if (!function_exists("GetSQLValueString")) {
 }
 
 $currentIssuesIntro = "";
+$currentIssuesPageHtml = "";
 
 mysql_select_db($database_CollegeBoundNews, $CollegeBoundNews);
-$query_Recordset1 = "SELECT theKey, Verbiage FROM SiteText WHERE theKey = 'CurrentIssues'";
+$query_Recordset1 = "SELECT theKey, Verbiage FROM SiteText WHERE theKey IN ('CurrentIssues', 'CurrentIssuesPage')";
 $Recordset1 = mysql_query($query_Recordset1, $CollegeBoundNews) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
@@ -52,6 +55,9 @@ if ($totalRows_Recordset1 > 0) {
     do {
         if ($row_Recordset1["theKey"] === "CurrentIssues") {
             $currentIssuesIntro = $row_Recordset1["Verbiage"];
+        }
+        if ($row_Recordset1["theKey"] === "CurrentIssuesPage") {
+            $currentIssuesPageHtml = $row_Recordset1["Verbiage"];
         }
     } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1));
 }
@@ -137,26 +143,13 @@ if ($totalRows_Recordset1 > 0) {
                         <td width="440" valign="top" align="left">
                            <br /><br />
                            <p>&nbsp;</p>
-                           <p><b><font color="#3366cc" size="+2" face="Arial">2026-2027
-                              Issues<br />
-                              </font><font color="#3366cc" size="+1" face="Arial">Volume 41</font></b>
-                           </p>
-                           <p><b><font color="#3366cc" size="-1" face="Verdana">If you need to renew your subscription call 773-262-5810, or subscribe on
-                              this website, www.collegeboundnews.com. (The subscriber access codes change September 15.) Thank you. Have a great school year.<br />
-                              <br />
-                              Open your current issue by clicking the month below.
-                              </font></b>
-                           </p>
-                           <hr />
-                           <!-- 2026-2027 HTML issues: add newest month at the TOP. Link to 26-27issues/*.html (not PDF). -->
-                           <p>
-                             <a href="26-27issues/Sept26.html" target="_blank"><b>
-                               <font size="+1" face="Verdana">September 2026</font>
-                             </b></a><br />
-                           </p>
-                           <!-- Monthly teaser not yet supplied by client; do not invent. -->
-                           <hr />
-                           <p>&nbsp;</p>
+                           <?php
+                           if (trim($currentIssuesPageHtml) !== "") {
+                               echo $currentIssuesPageHtml;
+                           } else {
+                               echo '<p><strong>Current issues content has not been published yet.</strong></p>';
+                           }
+                           ?>
                         </td>
                         <td width="9" valign="top">&nbsp;</td>
                         <td width="149" valign="top">
